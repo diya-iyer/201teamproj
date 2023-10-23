@@ -1,0 +1,17 @@
+// Author: Neme Velazquez
+// Purpose: Start (attempts at) drafting outline for availability section of Laundry Den app using schUML
+// Restrictions: None; N/A
+
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+
+// interface - stores states machines for interactive map
+[+I:IMachine|+Broken:bool;+Open:bool;+Taken:bool;+DisplayStatus()]
+
+// class (tentatively) - display total washers based on their state, entered by users in the app
+[+Machine|+machineType:string;+name:string|+DisplayStatus()|]
+[+Map||+DisplayMachines();+DisplayLegend()|();(machine:Machine)]
+
+//inheritance
+[+I:IMachine] ^ [+Machine]
