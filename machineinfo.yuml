@@ -3,18 +3,19 @@
 // {direction:topDown}
 
 // Interfaces
-[+IWash|+Fill(); +Rinse(); +Soak(); +Spin();]
-[+IDry|+AirFluff(); +HeatDry()]
+[+IWash|Fill(); Rinse(); Soak(); Spin();]
+[+IDry|AirFluff(); HeatDry()]
 
 // Abstract Class
-[+Load|+loadname:string | +SetTime();]
+[+A:Load|+loadname:string | +SetTime();]
 
 // Classes
-[+WashLoad|+Fill(); +Rinse(); +Soak(); +Spin();]
-[+DryLoad|+AirFluff(); +HeatDry()]
+[+WashLoad||+Fill(); +Rinse(); +Soak(); +Spin();]
+[+DryLoad||+AirFluff(); +HeatDry()]
+[+Machine| +model:string; +available:bool; +location:string]
 
 // Relationships
-[+Load]^-.-[+WashLoad]
-[+Load]^-.-[+DryLoad]
+[+A:Load]^-.-[+WashLoad]
+[+A:Load]^-.-[+DryLoad]
 [+IWash]^[+WashLoad]
 [+IDry]^[+DryLoad]
