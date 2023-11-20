@@ -1,0 +1,30 @@
+// Tyler Aluko
+// IGME.201 - Team 2 Documentation
+// (WIP) schUML data model for the History Log module. 
+
+
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+
+
+// interfaces - show info/settings from previous loads
+//[+I:IHistory | Info(); WashSettings();DrySettings();]
+[+I:WashLog|+DateTime();Machine();WashSet();]
+[+I:DryLog|+DateTime();Machine();DrySet();]
+
+// abstract classes - copy/report previous laundry
+[+A:Log|+logNum:int;|+CopySettings();|+Report()]
+//choose log number to inspect
+//choose to copy settings
+//choose to report; will redirect to report module
+
+// classes - holds info per log (tent. settings)
+[+WashSet|+temp:string;+washType:string;+time:int;]
+[+DrySet|+temp:string;time:int;]
+
+//inheritance
+[+I:WashLog]^[+WashSet]
+[+I:DryLog]^[+DrySet]
+[+A:Log]<-.-[+WashSet]
+[+A:Log]<-.-[+DrySet]
