@@ -15,6 +15,10 @@ namespace LaundryApp
         public MachineInfo()
         {
             InitializeComponent();
+
+            this.startButton.Click += new EventHandler(StartButton__Click);
+
+            
         }
 
        
