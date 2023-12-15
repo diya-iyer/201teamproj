@@ -1,0 +1,135 @@
+{
+	"Sol": {
+		"Washers": {
+			"Washer1" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			}, 
+			"Washer2" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer3" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer4" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer5" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			}
+		},
+		"Dryers": {
+			"Dryer1": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer2": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer3": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer4": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer4": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			}]
+		}			
+	},
+	"Ellingson" : {
+			"Washers": {
+			"Washer1" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			}, 
+			"Washer2" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer3" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer4" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			},
+			"Washer5" : {
+				"Available": 1,
+				"Setting1": [Normal, 					Delicates, Heavy Duty
+				],
+				"Setting2": [ Cold, Warm
+				]
+			}
+		},
+		"Dryers": {
+			"Dryer1": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer2": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer3": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer4": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			},
+			"Dryer4": {
+				"Available": 1,
+				"Setting1": [Air Fluff, 				Heat Dry
+				],
+			}]
+		}
+
+	}
+}
