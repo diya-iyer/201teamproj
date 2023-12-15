@@ -1,0 +1,6 @@
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\bin\Debug\LaundryMachines.dll
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\bin\Debug\LaundryMachines.pdb
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\obj\Debug\LaundryMachines.csproj.AssemblyReference.cache
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\obj\Debug\LaundryMachines.csproj.CoreCompileInputs.cache
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\obj\Debug\LaundryMachines.dll
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryMachines\obj\Debug\LaundryMachines.pdb
