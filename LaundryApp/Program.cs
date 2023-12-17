@@ -16,7 +16,7 @@ namespace LaundryApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MachineInfo());
+            Application.Run(new MachineInfo("Sol"));
         }
     }
 }

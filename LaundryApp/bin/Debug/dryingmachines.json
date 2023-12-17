@@ -1,0 +1,23 @@
+[
+	{
+		"location": "Sol",
+		"machineName": "Dryer1",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45]
+	},
+	{
+		"location": "Sol",
+		"machineName": "Dryer2",
+		"available": 1,
+		"dryType": ["Heat Dry" ],
+		"dryTypeTime": [45]
+	},
+	{
+		"location": "Sol",
+		"machineName": "Dryer3",
+		"available": 0,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [20, 45]
+	}
+]

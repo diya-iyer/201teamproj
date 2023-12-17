@@ -1,0 +1,26 @@
+[
+	{
+		"location": "Sol",
+		"machineName": "Washer1",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [50, 70, 90],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Sol",
+		"machineName": "Washer2",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Sol",
+		"machineName": "Washer3",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	}
+]

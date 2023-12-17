@@ -1,0 +1,15 @@
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.AssemblyReference.cache
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.MachineInfo.resources
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.Properties.Resources.resources
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.GenerateResource.cache
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.CoreCompileInputs.cache
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\LaundryApp.exe.config
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\LaundryApp.exe
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\LaundryApp.pdb
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\LaundryMachines.dll
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\LaundryMachines.pdb
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.CopyComplete
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.exe
+C:\Users\diyai\source\repos\diya-iyer\201teamproj\LaundryApp\obj\Debug\LaundryApp.pdb
