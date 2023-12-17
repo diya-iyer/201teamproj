@@ -8,7 +8,7 @@ namespace LaundryMachines
 {
     public abstract class Machine
     {
-        public string model;
+        public string machineName;
         public bool available;
         public string location;
         public string loadName;
@@ -23,13 +23,20 @@ namespace LaundryMachines
     }
     public class WashLoad : Machine
     {
-        public string washType;
-        public string temperature;
+        public string[] washType;
+        public int[] washTypeTime;
+        public string[] temperature;
+
+        public string selectedWashType;
+        public string selectedTemperature;
 
     }
 
     public class DryLoad : Machine
     {
-        public string dryType;
+        public string[] dryType;
+        public int[] dryTypeTime;
+
+        public string selectedDryType;
     }
 }
