@@ -173,6 +173,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -192,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(202)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.toolStrip1);

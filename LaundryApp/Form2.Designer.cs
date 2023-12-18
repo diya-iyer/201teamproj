@@ -1,6 +1,6 @@
 ﻿namespace LaundryApp
 {
-    partial class History
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(202)))), ((int)(((byte)(237)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form2";
             this.Text = "Form2";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
