@@ -36,12 +36,18 @@
             this.ReportButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.brokenGroupBox = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.inUseGroupBox = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.inUseDryerLabel = new System.Windows.Forms.Label();
             this.inUseWasherLabel = new System.Windows.Forms.Label();
             this.openGroupBox = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.openDryerLabel = new System.Windows.Forms.Label();
             this.openWasherLabel = new System.Windows.Forms.Label();
             this.availabilityLabel = new System.Windows.Forms.Label();
@@ -63,12 +69,6 @@
             this.resHallCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resHallDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solHeumannToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.brokenGroupBox.SuspendLayout();
@@ -182,6 +182,26 @@
             this.brokenGroupBox.TabStop = false;
             this.brokenGroupBox.Text = "Broken";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(206, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(20, 24);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "1";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(50, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(20, 24);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "0";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -214,6 +234,26 @@
             this.inUseGroupBox.TabStop = false;
             this.inUseGroupBox.Text = "In Use";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(206, 30);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 24);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(51, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 24);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "2";
+            // 
             // inUseDryerLabel
             // 
             this.inUseDryerLabel.AutoSize = true;
@@ -245,6 +285,26 @@
             this.openGroupBox.TabIndex = 1;
             this.openGroupBox.TabStop = false;
             this.openGroupBox.Text = "Open";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(206, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "1";
             // 
             // openDryerLabel
             // 
@@ -349,140 +409,80 @@
             // carltonGibsonToolStripMenuItem
             // 
             this.carltonGibsonToolStripMenuItem.Name = "carltonGibsonToolStripMenuItem";
-            this.carltonGibsonToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.carltonGibsonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carltonGibsonToolStripMenuItem.Text = "Carlton Gibson";
             // 
             // eugeneColbyToolStripMenuItem
             // 
             this.eugeneColbyToolStripMenuItem.Name = "eugeneColbyToolStripMenuItem";
-            this.eugeneColbyToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.eugeneColbyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eugeneColbyToolStripMenuItem.Text = "Eugene Colby";
             // 
             // francesBakerToolStripMenuItem
             // 
             this.francesBakerToolStripMenuItem.Name = "francesBakerToolStripMenuItem";
-            this.francesBakerToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.francesBakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.francesBakerToolStripMenuItem.Text = "Frances Baker";
             // 
             // frederickaDouglassToolStripMenuItem
             // 
             this.frederickaDouglassToolStripMenuItem.Name = "frederickaDouglassToolStripMenuItem";
-            this.frederickaDouglassToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.frederickaDouglassToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.frederickaDouglassToolStripMenuItem.Text = "Fredericka Douglass";
             // 
             // helenFishToolStripMenuItem
             // 
             this.helenFishToolStripMenuItem.Name = "helenFishToolStripMenuItem";
-            this.helenFishToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.helenFishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.helenFishToolStripMenuItem.Text = "Helen Fish";
             // 
             // kateGleasonToolStripMenuItem
             // 
             this.kateGleasonToolStripMenuItem.Name = "kateGleasonToolStripMenuItem";
-            this.kateGleasonToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.kateGleasonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kateGleasonToolStripMenuItem.Text = "Kate Gleason";
             // 
             // markEllingsonToolStripMenuItem
             // 
             this.markEllingsonToolStripMenuItem.Name = "markEllingsonToolStripMenuItem";
-            this.markEllingsonToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.markEllingsonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.markEllingsonToolStripMenuItem.Text = "Mark Ellingson";
             // 
             // peterPetersonToolStripMenuItem
             // 
             this.peterPetersonToolStripMenuItem.Name = "peterPetersonToolStripMenuItem";
-            this.peterPetersonToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.peterPetersonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.peterPetersonToolStripMenuItem.Text = "Peter Peterson";
             // 
             // resHallAToolStripMenuItem
             // 
             this.resHallAToolStripMenuItem.Name = "resHallAToolStripMenuItem";
-            this.resHallAToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.resHallAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resHallAToolStripMenuItem.Text = "Res Hall A";
             // 
             // resHallToolStripMenuItem
             // 
             this.resHallToolStripMenuItem.Name = "resHallToolStripMenuItem";
-            this.resHallToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.resHallToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resHallToolStripMenuItem.Text = "Res Hall B";
             // 
             // resHallCToolStripMenuItem
             // 
             this.resHallCToolStripMenuItem.Name = "resHallCToolStripMenuItem";
-            this.resHallCToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.resHallCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resHallCToolStripMenuItem.Text = "Res Hall C";
             // 
             // resHallDToolStripMenuItem
             // 
             this.resHallDToolStripMenuItem.Name = "resHallDToolStripMenuItem";
-            this.resHallDToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.resHallDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resHallDToolStripMenuItem.Text = "Res Hall D";
             // 
             // solHeumannToolStripMenuItem
             // 
             this.solHeumannToolStripMenuItem.Name = "solHeumannToolStripMenuItem";
-            this.solHeumannToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.solHeumannToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.solHeumannToolStripMenuItem.Text = "Sol Heumann";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(206, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "2";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(206, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 24);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(50, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(20, 24);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "0";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(206, 33);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(20, 24);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "1";
             // 
             // AvailabilityForm
             // 
