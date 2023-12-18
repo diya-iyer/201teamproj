@@ -15,12 +15,13 @@ namespace LaundryApp
 {
     public partial class MachineInfo : Form
     {
-        List<WashLoad> washers = new List<WashLoad>();
-        List<DryLoad> dryers = new List<DryLoad>();
+        public List<WashLoad> washers = new List<WashLoad>();
+        public List<DryLoad> dryers = new List<DryLoad>();
         WashLoad selectedWasher = null;
         DryLoad selectedDryer = null;
         List<WashLoad> selectedWasherList = new List<WashLoad>();
         List<DryLoad> selectedDryerList = new List<DryLoad>();
+
         public MachineInfo(string location)
         {
             InitializeComponent();
@@ -32,10 +33,7 @@ namespace LaundryApp
             this.setting1ComboBox.SelectedValueChanged += new EventHandler(Setting1ComboBox__SelectedValueChanged);
             this.setting2ComboBox.SelectedValueChanged += new EventHandler(Setting2ComboBox__SelectedValueChanged);
             this.startButton.Click += new EventHandler(StartButton__Click);
-
-            
         }
-
 
         private void LoadFormDetails(string location)
         {

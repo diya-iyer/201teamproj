@@ -28,41 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.homeToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.availabilityToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.historyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.reportToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.currentLoadsPanel = new System.Windows.Forms.Panel();
-            this.currentLoadsGroupBox3 = new System.Windows.Forms.GroupBox();
+            this.currentLoadsDryerGroupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3TimeLabel = new System.Windows.Forms.Label();
             this.groupBox3MachineLabel = new System.Windows.Forms.Label();
             this.groupBox3LaundromatLabel = new System.Windows.Forms.Label();
-            this.currentLoadsGroupBox2 = new System.Windows.Forms.GroupBox();
+            this.currentLoadsWasherGroupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox2TimeLabel = new System.Windows.Forms.Label();
             this.groupBox2MachineLabel = new System.Windows.Forms.Label();
             this.groupBox2LaundromatLabel = new System.Windows.Forms.Label();
-            this.currentLoadsGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.currentLoadsWasherGroupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1TimeLabel = new System.Windows.Forms.Label();
             this.groupBox1MachineLabel = new System.Windows.Forms.Label();
             this.groupBox1LaundromatLabel = new System.Windows.Forms.Label();
             this.currentLoadsLabel = new System.Windows.Forms.Label();
             this.newLoadPanel = new System.Windows.Forms.Panel();
-            this.newLoadTypeLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.goButton = new System.Windows.Forms.Button();
             this.newLoadLaundromatLabel = new System.Windows.Forms.Label();
-            this.dryRadioButton = new System.Windows.Forms.RadioButton();
-            this.washRadioButton = new System.Windows.Forms.RadioButton();
             this.laundromatComboBox = new System.Windows.Forms.ComboBox();
             this.newLoadLabel = new System.Windows.Forms.Label();
+            this.currentLoadsDryerGroupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox4TimeLabel = new System.Windows.Forms.Label();
+            this.groupBox4MachineLabel = new System.Windows.Forms.Label();
+            this.groupBox4LaundromatLabel = new System.Windows.Forms.Label();
+            this.washersLabel = new System.Windows.Forms.Label();
+            this.dryersLabel = new System.Windows.Forms.Label();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolStrip1.SuspendLayout();
             this.currentLoadsPanel.SuspendLayout();
-            this.currentLoadsGroupBox3.SuspendLayout();
-            this.currentLoadsGroupBox2.SuspendLayout();
-            this.currentLoadsGroupBox1.SuspendLayout();
+            this.currentLoadsDryerGroupBox1.SuspendLayout();
+            this.currentLoadsWasherGroupBox2.SuspendLayout();
+            this.currentLoadsWasherGroupBox1.SuspendLayout();
             this.newLoadPanel.SuspendLayout();
+            this.currentLoadsDryerGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -71,8 +78,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.homeToolStripButton,
-            this.toolStripButton1,
-            this.toolStripButton2,
+            this.availabilityToolStripButton,
+            this.historyToolStripButton,
             this.reportToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.MaximumSize = new System.Drawing.Size(800, 45);
@@ -96,27 +103,27 @@
             this.homeToolStripButton.Size = new System.Drawing.Size(43, 22);
             this.homeToolStripButton.Text = "Home";
             // 
-            // toolStripButton1
+            // availabilityToolStripButton
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.ForeColor = System.Drawing.Color.White;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(69, 22);
-            this.toolStripButton1.Text = "Availability";
+            this.availabilityToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.availabilityToolStripButton.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availabilityToolStripButton.ForeColor = System.Drawing.Color.White;
+            this.availabilityToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("availabilityToolStripButton.Image")));
+            this.availabilityToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.availabilityToolStripButton.Name = "availabilityToolStripButton";
+            this.availabilityToolStripButton.Size = new System.Drawing.Size(69, 22);
+            this.availabilityToolStripButton.Text = "Availability";
             // 
-            // toolStripButton2
+            // historyToolStripButton
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton2.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton2.ForeColor = System.Drawing.Color.White;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(49, 22);
-            this.toolStripButton2.Text = "History";
+            this.historyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.historyToolStripButton.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyToolStripButton.ForeColor = System.Drawing.Color.White;
+            this.historyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("historyToolStripButton.Image")));
+            this.historyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.historyToolStripButton.Name = "historyToolStripButton";
+            this.historyToolStripButton.Size = new System.Drawing.Size(49, 22);
+            this.historyToolStripButton.Text = "History";
             // 
             // reportToolStripButton
             // 
@@ -132,28 +139,31 @@
             // currentLoadsPanel
             // 
             this.currentLoadsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.currentLoadsPanel.Controls.Add(this.currentLoadsGroupBox3);
-            this.currentLoadsPanel.Controls.Add(this.currentLoadsGroupBox2);
-            this.currentLoadsPanel.Controls.Add(this.currentLoadsGroupBox1);
+            this.currentLoadsPanel.Controls.Add(this.dryersLabel);
+            this.currentLoadsPanel.Controls.Add(this.washersLabel);
+            this.currentLoadsPanel.Controls.Add(this.currentLoadsDryerGroupBox2);
+            this.currentLoadsPanel.Controls.Add(this.currentLoadsDryerGroupBox1);
+            this.currentLoadsPanel.Controls.Add(this.currentLoadsWasherGroupBox2);
+            this.currentLoadsPanel.Controls.Add(this.currentLoadsWasherGroupBox1);
             this.currentLoadsPanel.Controls.Add(this.currentLoadsLabel);
-            this.currentLoadsPanel.Location = new System.Drawing.Point(12, 49);
+            this.currentLoadsPanel.Location = new System.Drawing.Point(22, 49);
             this.currentLoadsPanel.Name = "currentLoadsPanel";
-            this.currentLoadsPanel.Size = new System.Drawing.Size(327, 370);
+            this.currentLoadsPanel.Size = new System.Drawing.Size(756, 282);
             this.currentLoadsPanel.TabIndex = 2;
             // 
-            // currentLoadsGroupBox3
+            // currentLoadsDryerGroupBox1
             // 
-            this.currentLoadsGroupBox3.Controls.Add(this.groupBox3TimeLabel);
-            this.currentLoadsGroupBox3.Controls.Add(this.groupBox3MachineLabel);
-            this.currentLoadsGroupBox3.Controls.Add(this.groupBox3LaundromatLabel);
-            this.currentLoadsGroupBox3.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLoadsGroupBox3.ForeColor = System.Drawing.Color.White;
-            this.currentLoadsGroupBox3.Location = new System.Drawing.Point(14, 248);
-            this.currentLoadsGroupBox3.Name = "currentLoadsGroupBox3";
-            this.currentLoadsGroupBox3.Size = new System.Drawing.Size(299, 100);
-            this.currentLoadsGroupBox3.TabIndex = 6;
-            this.currentLoadsGroupBox3.TabStop = false;
-            this.currentLoadsGroupBox3.Text = "Load #3";
+            this.currentLoadsDryerGroupBox1.Controls.Add(this.groupBox3TimeLabel);
+            this.currentLoadsDryerGroupBox1.Controls.Add(this.groupBox3MachineLabel);
+            this.currentLoadsDryerGroupBox1.Controls.Add(this.groupBox3LaundromatLabel);
+            this.currentLoadsDryerGroupBox1.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentLoadsDryerGroupBox1.ForeColor = System.Drawing.Color.White;
+            this.currentLoadsDryerGroupBox1.Location = new System.Drawing.Point(413, 66);
+            this.currentLoadsDryerGroupBox1.Name = "currentLoadsDryerGroupBox1";
+            this.currentLoadsDryerGroupBox1.Size = new System.Drawing.Size(299, 100);
+            this.currentLoadsDryerGroupBox1.TabIndex = 6;
+            this.currentLoadsDryerGroupBox1.TabStop = false;
+            this.currentLoadsDryerGroupBox1.Text = "Load #3";
             // 
             // groupBox3TimeLabel
             // 
@@ -185,19 +195,19 @@
             this.groupBox3LaundromatLabel.TabIndex = 0;
             this.groupBox3LaundromatLabel.Text = "SOL";
             // 
-            // currentLoadsGroupBox2
+            // currentLoadsWasherGroupBox2
             // 
-            this.currentLoadsGroupBox2.Controls.Add(this.groupBox2TimeLabel);
-            this.currentLoadsGroupBox2.Controls.Add(this.groupBox2MachineLabel);
-            this.currentLoadsGroupBox2.Controls.Add(this.groupBox2LaundromatLabel);
-            this.currentLoadsGroupBox2.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLoadsGroupBox2.ForeColor = System.Drawing.Color.White;
-            this.currentLoadsGroupBox2.Location = new System.Drawing.Point(14, 142);
-            this.currentLoadsGroupBox2.Name = "currentLoadsGroupBox2";
-            this.currentLoadsGroupBox2.Size = new System.Drawing.Size(299, 100);
-            this.currentLoadsGroupBox2.TabIndex = 5;
-            this.currentLoadsGroupBox2.TabStop = false;
-            this.currentLoadsGroupBox2.Text = "Load #2";
+            this.currentLoadsWasherGroupBox2.Controls.Add(this.groupBox2TimeLabel);
+            this.currentLoadsWasherGroupBox2.Controls.Add(this.groupBox2MachineLabel);
+            this.currentLoadsWasherGroupBox2.Controls.Add(this.groupBox2LaundromatLabel);
+            this.currentLoadsWasherGroupBox2.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentLoadsWasherGroupBox2.ForeColor = System.Drawing.Color.White;
+            this.currentLoadsWasherGroupBox2.Location = new System.Drawing.Point(63, 172);
+            this.currentLoadsWasherGroupBox2.Name = "currentLoadsWasherGroupBox2";
+            this.currentLoadsWasherGroupBox2.Size = new System.Drawing.Size(299, 100);
+            this.currentLoadsWasherGroupBox2.TabIndex = 5;
+            this.currentLoadsWasherGroupBox2.TabStop = false;
+            this.currentLoadsWasherGroupBox2.Text = "Load #2";
             // 
             // groupBox2TimeLabel
             // 
@@ -229,19 +239,19 @@
             this.groupBox2LaundromatLabel.TabIndex = 0;
             this.groupBox2LaundromatLabel.Text = "SOL";
             // 
-            // currentLoadsGroupBox1
+            // currentLoadsWasherGroupBox1
             // 
-            this.currentLoadsGroupBox1.Controls.Add(this.groupBox1TimeLabel);
-            this.currentLoadsGroupBox1.Controls.Add(this.groupBox1MachineLabel);
-            this.currentLoadsGroupBox1.Controls.Add(this.groupBox1LaundromatLabel);
-            this.currentLoadsGroupBox1.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLoadsGroupBox1.ForeColor = System.Drawing.Color.White;
-            this.currentLoadsGroupBox1.Location = new System.Drawing.Point(14, 36);
-            this.currentLoadsGroupBox1.Name = "currentLoadsGroupBox1";
-            this.currentLoadsGroupBox1.Size = new System.Drawing.Size(299, 100);
-            this.currentLoadsGroupBox1.TabIndex = 4;
-            this.currentLoadsGroupBox1.TabStop = false;
-            this.currentLoadsGroupBox1.Text = "Load #1";
+            this.currentLoadsWasherGroupBox1.Controls.Add(this.groupBox1TimeLabel);
+            this.currentLoadsWasherGroupBox1.Controls.Add(this.groupBox1MachineLabel);
+            this.currentLoadsWasherGroupBox1.Controls.Add(this.groupBox1LaundromatLabel);
+            this.currentLoadsWasherGroupBox1.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentLoadsWasherGroupBox1.ForeColor = System.Drawing.Color.White;
+            this.currentLoadsWasherGroupBox1.Location = new System.Drawing.Point(63, 66);
+            this.currentLoadsWasherGroupBox1.Name = "currentLoadsWasherGroupBox1";
+            this.currentLoadsWasherGroupBox1.Size = new System.Drawing.Size(299, 100);
+            this.currentLoadsWasherGroupBox1.TabIndex = 4;
+            this.currentLoadsWasherGroupBox1.TabStop = false;
+            this.currentLoadsWasherGroupBox1.Text = "Load #1";
             // 
             // groupBox1TimeLabel
             // 
@@ -287,85 +297,45 @@
             // newLoadPanel
             // 
             this.newLoadPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.newLoadPanel.Controls.Add(this.newLoadTypeLabel);
-            this.newLoadPanel.Controls.Add(this.button1);
+            this.newLoadPanel.Controls.Add(this.goButton);
             this.newLoadPanel.Controls.Add(this.newLoadLaundromatLabel);
-            this.newLoadPanel.Controls.Add(this.dryRadioButton);
-            this.newLoadPanel.Controls.Add(this.washRadioButton);
             this.newLoadPanel.Controls.Add(this.laundromatComboBox);
             this.newLoadPanel.Controls.Add(this.newLoadLabel);
-            this.newLoadPanel.Location = new System.Drawing.Point(367, 49);
+            this.newLoadPanel.Location = new System.Drawing.Point(22, 337);
             this.newLoadPanel.Name = "newLoadPanel";
-            this.newLoadPanel.Size = new System.Drawing.Size(410, 197);
+            this.newLoadPanel.Size = new System.Drawing.Size(756, 101);
             this.newLoadPanel.TabIndex = 3;
             // 
-            // newLoadTypeLabel
+            // goButton
             // 
-            this.newLoadTypeLabel.AutoSize = true;
-            this.newLoadTypeLabel.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newLoadTypeLabel.ForeColor = System.Drawing.Color.White;
-            this.newLoadTypeLabel.Location = new System.Drawing.Point(23, 93);
-            this.newLoadTypeLabel.Name = "newLoadTypeLabel";
-            this.newLoadTypeLabel.Size = new System.Drawing.Size(81, 20);
-            this.newLoadTypeLabel.TabIndex = 14;
-            this.newLoadTypeLabel.Text = "Load Type:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(134, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 44);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Go";
-            this.button1.UseVisualStyleBackColor = true;
+            this.goButton.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goButton.Location = new System.Drawing.Point(454, 33);
+            this.goButton.Name = "goButton";
+            this.goButton.Size = new System.Drawing.Size(136, 44);
+            this.goButton.TabIndex = 4;
+            this.goButton.Text = "Go";
+            this.goButton.UseVisualStyleBackColor = true;
             // 
             // newLoadLaundromatLabel
             // 
             this.newLoadLaundromatLabel.AutoSize = true;
             this.newLoadLaundromatLabel.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newLoadLaundromatLabel.ForeColor = System.Drawing.Color.White;
-            this.newLoadLaundromatLabel.Location = new System.Drawing.Point(23, 50);
+            this.newLoadLaundromatLabel.Location = new System.Drawing.Point(11, 48);
             this.newLoadLaundromatLabel.Name = "newLoadLaundromatLabel";
             this.newLoadLaundromatLabel.Size = new System.Drawing.Size(92, 20);
             this.newLoadLaundromatLabel.TabIndex = 13;
             this.newLoadLaundromatLabel.Text = "Laundromat:";
             // 
-            // dryRadioButton
-            // 
-            this.dryRadioButton.AutoSize = true;
-            this.dryRadioButton.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dryRadioButton.ForeColor = System.Drawing.Color.White;
-            this.dryRadioButton.Location = new System.Drawing.Point(220, 89);
-            this.dryRadioButton.Name = "dryRadioButton";
-            this.dryRadioButton.Size = new System.Drawing.Size(50, 24);
-            this.dryRadioButton.TabIndex = 12;
-            this.dryRadioButton.TabStop = true;
-            this.dryRadioButton.Text = "Dry";
-            this.dryRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // washRadioButton
-            // 
-            this.washRadioButton.AutoSize = true;
-            this.washRadioButton.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.washRadioButton.ForeColor = System.Drawing.Color.White;
-            this.washRadioButton.Location = new System.Drawing.Point(134, 89);
-            this.washRadioButton.Name = "washRadioButton";
-            this.washRadioButton.Size = new System.Drawing.Size(63, 24);
-            this.washRadioButton.TabIndex = 11;
-            this.washRadioButton.TabStop = true;
-            this.washRadioButton.Text = "Wash";
-            this.washRadioButton.UseVisualStyleBackColor = true;
-            // 
             // laundromatComboBox
             // 
             this.laundromatComboBox.FormattingEnabled = true;
             this.laundromatComboBox.Items.AddRange(new object[] {
-            "Sol Heumann Hall",
-            "Kate Gleason Hall",
-            "Carlton Gibson Hall",
-            "Mark Ellingson Hall"});
-            this.laundromatComboBox.Location = new System.Drawing.Point(134, 49);
+            "Sol",
+            "Ellingson",
+            "Gleason",
+            "Gibson"});
+            this.laundromatComboBox.Location = new System.Drawing.Point(122, 47);
             this.laundromatComboBox.Name = "laundromatComboBox";
             this.laundromatComboBox.Size = new System.Drawing.Size(255, 21);
             this.laundromatComboBox.TabIndex = 8;
@@ -380,6 +350,76 @@
             this.newLoadLabel.Size = new System.Drawing.Size(112, 30);
             this.newLoadLabel.TabIndex = 7;
             this.newLoadLabel.Text = "New Load";
+            // 
+            // currentLoadsDryerGroupBox2
+            // 
+            this.currentLoadsDryerGroupBox2.Controls.Add(this.groupBox4TimeLabel);
+            this.currentLoadsDryerGroupBox2.Controls.Add(this.groupBox4MachineLabel);
+            this.currentLoadsDryerGroupBox2.Controls.Add(this.groupBox4LaundromatLabel);
+            this.currentLoadsDryerGroupBox2.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentLoadsDryerGroupBox2.ForeColor = System.Drawing.Color.White;
+            this.currentLoadsDryerGroupBox2.Location = new System.Drawing.Point(413, 172);
+            this.currentLoadsDryerGroupBox2.Name = "currentLoadsDryerGroupBox2";
+            this.currentLoadsDryerGroupBox2.Size = new System.Drawing.Size(299, 100);
+            this.currentLoadsDryerGroupBox2.TabIndex = 7;
+            this.currentLoadsDryerGroupBox2.TabStop = false;
+            this.currentLoadsDryerGroupBox2.Text = "Load #4";
+            // 
+            // groupBox4TimeLabel
+            // 
+            this.groupBox4TimeLabel.AutoSize = true;
+            this.groupBox4TimeLabel.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4TimeLabel.Location = new System.Drawing.Point(94, 35);
+            this.groupBox4TimeLabel.Name = "groupBox4TimeLabel";
+            this.groupBox4TimeLabel.Size = new System.Drawing.Size(191, 20);
+            this.groupBox4TimeLabel.TabIndex = 2;
+            this.groupBox4TimeLabel.Text = "Estimated Time: 40 minutes";
+            // 
+            // groupBox4MachineLabel
+            // 
+            this.groupBox4MachineLabel.AutoSize = true;
+            this.groupBox4MachineLabel.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4MachineLabel.Location = new System.Drawing.Point(6, 64);
+            this.groupBox4MachineLabel.Name = "groupBox4MachineLabel";
+            this.groupBox4MachineLabel.Size = new System.Drawing.Size(66, 20);
+            this.groupBox4MachineLabel.TabIndex = 1;
+            this.groupBox4MachineLabel.Text = "Dryer #6";
+            // 
+            // groupBox4LaundromatLabel
+            // 
+            this.groupBox4LaundromatLabel.AutoSize = true;
+            this.groupBox4LaundromatLabel.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4LaundromatLabel.Location = new System.Drawing.Point(6, 35);
+            this.groupBox4LaundromatLabel.Name = "groupBox4LaundromatLabel";
+            this.groupBox4LaundromatLabel.Size = new System.Drawing.Size(35, 20);
+            this.groupBox4LaundromatLabel.TabIndex = 0;
+            this.groupBox4LaundromatLabel.Text = "SOL";
+            // 
+            // washersLabel
+            // 
+            this.washersLabel.AutoSize = true;
+            this.washersLabel.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.washersLabel.ForeColor = System.Drawing.Color.White;
+            this.washersLabel.Location = new System.Drawing.Point(165, 33);
+            this.washersLabel.Name = "washersLabel";
+            this.washersLabel.Size = new System.Drawing.Size(95, 30);
+            this.washersLabel.TabIndex = 8;
+            this.washersLabel.Text = "Washers";
+            // 
+            // dryersLabel
+            // 
+            this.dryersLabel.AutoSize = true;
+            this.dryersLabel.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dryersLabel.ForeColor = System.Drawing.Color.White;
+            this.dryersLabel.Location = new System.Drawing.Point(525, 33);
+            this.dryersLabel.Name = "dryersLabel";
+            this.dryersLabel.Size = new System.Drawing.Size(75, 30);
+            this.dryersLabel.TabIndex = 9;
+            this.dryersLabel.Text = "Dryers";
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // Home
             // 
@@ -396,14 +436,17 @@
             this.toolStrip1.PerformLayout();
             this.currentLoadsPanel.ResumeLayout(false);
             this.currentLoadsPanel.PerformLayout();
-            this.currentLoadsGroupBox3.ResumeLayout(false);
-            this.currentLoadsGroupBox3.PerformLayout();
-            this.currentLoadsGroupBox2.ResumeLayout(false);
-            this.currentLoadsGroupBox2.PerformLayout();
-            this.currentLoadsGroupBox1.ResumeLayout(false);
-            this.currentLoadsGroupBox1.PerformLayout();
+            this.currentLoadsDryerGroupBox1.ResumeLayout(false);
+            this.currentLoadsDryerGroupBox1.PerformLayout();
+            this.currentLoadsWasherGroupBox2.ResumeLayout(false);
+            this.currentLoadsWasherGroupBox2.PerformLayout();
+            this.currentLoadsWasherGroupBox1.ResumeLayout(false);
+            this.currentLoadsWasherGroupBox1.PerformLayout();
             this.newLoadPanel.ResumeLayout(false);
             this.newLoadPanel.PerformLayout();
+            this.currentLoadsDryerGroupBox2.ResumeLayout(false);
+            this.currentLoadsDryerGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,28 +459,32 @@
         private System.Windows.Forms.Panel currentLoadsPanel;
         private System.Windows.Forms.Panel newLoadPanel;
         private System.Windows.Forms.Label currentLoadsLabel;
-        private System.Windows.Forms.GroupBox currentLoadsGroupBox1;
+        private System.Windows.Forms.GroupBox currentLoadsWasherGroupBox1;
         private System.Windows.Forms.Label groupBox1TimeLabel;
         private System.Windows.Forms.Label groupBox1MachineLabel;
         private System.Windows.Forms.Label groupBox1LaundromatLabel;
-        private System.Windows.Forms.GroupBox currentLoadsGroupBox2;
+        private System.Windows.Forms.GroupBox currentLoadsWasherGroupBox2;
         private System.Windows.Forms.Label groupBox2TimeLabel;
         private System.Windows.Forms.Label groupBox2MachineLabel;
         private System.Windows.Forms.Label groupBox2LaundromatLabel;
-        private System.Windows.Forms.GroupBox currentLoadsGroupBox3;
+        private System.Windows.Forms.GroupBox currentLoadsDryerGroupBox1;
         private System.Windows.Forms.Label groupBox3TimeLabel;
         private System.Windows.Forms.Label groupBox3MachineLabel;
         private System.Windows.Forms.Label groupBox3LaundromatLabel;
         private System.Windows.Forms.Label newLoadLabel;
         private System.Windows.Forms.ComboBox laundromatComboBox;
-        private System.Windows.Forms.RadioButton dryRadioButton;
-        private System.Windows.Forms.RadioButton washRadioButton;
         private System.Windows.Forms.Label newLoadLaundromatLabel;
-        private System.Windows.Forms.Label newLoadTypeLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.ToolStripButton homeToolStripButton;
         private System.Windows.Forms.ToolStripButton reportToolStripButton;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton availabilityToolStripButton;
+        private System.Windows.Forms.ToolStripButton historyToolStripButton;
+        private System.Windows.Forms.GroupBox currentLoadsDryerGroupBox2;
+        private System.Windows.Forms.Label groupBox4TimeLabel;
+        private System.Windows.Forms.Label groupBox4MachineLabel;
+        private System.Windows.Forms.Label groupBox4LaundromatLabel;
+        private System.Windows.Forms.Label dryersLabel;
+        private System.Windows.Forms.Label washersLabel;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
