@@ -1,6 +1,6 @@
-﻿namespace LaundryApp
+﻿namespace ReportPage
 {
-    partial class MachineInfo
+    partial class ReportPage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,210 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.setting2ComboBox = new System.Windows.Forms.ComboBox();
-            this.setting1ComboBox = new System.Windows.Forms.ComboBox();
-            this.machineNumberComboBox = new System.Windows.Forms.ComboBox();
-            this.loadNameTextBox = new System.Windows.Forms.TextBox();
-            this.startButton = new System.Windows.Forms.Button();
-            this.estimateLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.washRadioButton = new System.Windows.Forms.RadioButton();
-            this.dryerRadioButton = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.timeLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.machineListBox = new System.Windows.Forms.ListBox();
+            this.locationListBox = new System.Windows.Forms.ListBox();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.describeIssue = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // setting2ComboBox
+            // button1
             // 
-            this.setting2ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.setting2ComboBox.Enabled = false;
-            this.setting2ComboBox.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setting2ComboBox.FormattingEnabled = true;
-            this.setting2ComboBox.Location = new System.Drawing.Point(235, 302);
-            this.setting2ComboBox.Name = "setting2ComboBox";
-            this.setting2ComboBox.Size = new System.Drawing.Size(136, 23);
-            this.setting2ComboBox.TabIndex = 0;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(232, 101);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // setting1ComboBox
+            // button2
             // 
-            this.setting1ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.setting1ComboBox.Enabled = false;
-            this.setting1ComboBox.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setting1ComboBox.FormattingEnabled = true;
-            this.setting1ComboBox.Location = new System.Drawing.Point(33, 302);
-            this.setting1ComboBox.Name = "setting1ComboBox";
-            this.setting1ComboBox.Size = new System.Drawing.Size(154, 23);
-            this.setting1ComboBox.TabIndex = 1;
+            this.button2.Location = new System.Drawing.Point(213, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(232, 101);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Availability";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // machineNumberComboBox
+            // button3
             // 
-            this.machineNumberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.machineNumberComboBox.Enabled = false;
-            this.machineNumberComboBox.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.machineNumberComboBox.FormattingEnabled = true;
-            this.machineNumberComboBox.Location = new System.Drawing.Point(163, 127);
-            this.machineNumberComboBox.Name = "machineNumberComboBox";
-            this.machineNumberComboBox.Size = new System.Drawing.Size(154, 23);
-            this.machineNumberComboBox.TabIndex = 2;
+            this.button3.Location = new System.Drawing.Point(425, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(232, 101);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "History";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // loadNameTextBox
+            // button4
             // 
-            this.loadNameTextBox.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadNameTextBox.Location = new System.Drawing.Point(146, 185);
-            this.loadNameTextBox.Name = "loadNameTextBox";
-            this.loadNameTextBox.Size = new System.Drawing.Size(153, 24);
-            this.loadNameTextBox.TabIndex = 3;
-            this.loadNameTextBox.Text = "Load 1";
+            this.button4.Location = new System.Drawing.Point(629, -1);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(232, 101);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Report";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // startButton
+            // panel1
             // 
-            this.startButton.Enabled = false;
-            this.startButton.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(52, 368);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(105, 35);
-            this.startButton.TabIndex = 4;
-            this.startButton.Text = "Start!";
-            this.startButton.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(1, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1505, 100);
+            this.panel1.TabIndex = 4;
             // 
-            // estimateLabel
+            // panel2
             // 
-            this.estimateLabel.AutoSize = true;
-            this.estimateLabel.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estimateLabel.Location = new System.Drawing.Point(497, 302);
-            this.estimateLabel.Name = "estimateLabel";
-            this.estimateLabel.Size = new System.Drawing.Size(131, 21);
-            this.estimateLabel.TabIndex = 5;
-            this.estimateLabel.Text = "ESTIMATED TIME:";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
+            this.panel2.Controls.Add(this.machineListBox);
+            this.panel2.Controls.Add(this.locationListBox);
+            this.panel2.Controls.Add(this.submitButton);
+            this.panel2.Controls.Add(this.describeIssue);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(169, 215);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1149, 631);
+            this.panel2.TabIndex = 5;
             // 
-            // label2
+            // machineListBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 21);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Machine Number:";
+            this.machineListBox.FormattingEnabled = true;
+            this.machineListBox.ItemHeight = 31;
+            this.machineListBox.Location = new System.Drawing.Point(59, 217);
+            this.machineListBox.Name = "machineListBox";
+            this.machineListBox.Size = new System.Drawing.Size(219, 66);
+            this.machineListBox.TabIndex = 6;
             // 
-            // label3
+            // locationListBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 185);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 21);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Load Name:";
+            this.locationListBox.FormattingEnabled = true;
+            this.locationListBox.ItemHeight = 31;
+            this.locationListBox.Location = new System.Drawing.Point(59, 102);
+            this.locationListBox.Name = "locationListBox";
+            this.locationListBox.Size = new System.Drawing.Size(218, 66);
+            this.locationListBox.TabIndex = 5;
             // 
-            // label4
+            // submitButton
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 264);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 21);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Choose Settings:";
+            this.submitButton.Location = new System.Drawing.Point(118, 515);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(285, 97);
+            this.submitButton.TabIndex = 4;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
-            // washRadioButton
+            // describeIssue
             // 
-            this.washRadioButton.AutoSize = true;
-            this.washRadioButton.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.washRadioButton.Location = new System.Drawing.Point(187, 69);
-            this.washRadioButton.Name = "washRadioButton";
-            this.washRadioButton.Size = new System.Drawing.Size(63, 24);
-            this.washRadioButton.TabIndex = 9;
-            this.washRadioButton.TabStop = true;
-            this.washRadioButton.Text = "Wash";
-            this.washRadioButton.UseVisualStyleBackColor = true;
+            this.describeIssue.Location = new System.Drawing.Point(59, 326);
+            this.describeIssue.Name = "describeIssue";
+            this.describeIssue.Size = new System.Drawing.Size(389, 158);
+            this.describeIssue.TabIndex = 3;
+            this.describeIssue.Text = "Describe the issue...";
             // 
-            // dryerRadioButton
+            // label1
             // 
-            this.dryerRadioButton.AutoSize = true;
-            this.dryerRadioButton.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dryerRadioButton.Location = new System.Drawing.Point(273, 69);
-            this.dryerRadioButton.Name = "dryerRadioButton";
-            this.dryerRadioButton.Size = new System.Drawing.Size(50, 24);
-            this.dryerRadioButton.TabIndex = 10;
-            this.dryerRadioButton.TabStop = true;
-            this.dryerRadioButton.Text = "Dry";
-            this.dryerRadioButton.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(602, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(527, 160);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "A place to report any broken \r\nmachines, operates similarly to \r\na normal FMS wor" +
+    "k ticket. User can input\r\nlocation, machine number, and \r\ndescribe the issue.\r\n";
             // 
-            // label5
+            // ReportPage
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 68);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 21);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Select Load Type:";
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 12;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // timeLabel
-            // 
-            this.timeLabel.AutoSize = true;
-            this.timeLabel.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.Location = new System.Drawing.Point(502, 343);
-            this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(0, 21);
-            this.timeLabel.TabIndex = 13;
-            // 
-            // MachineInfo
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(202)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.timeLabel);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dryerRadioButton);
-            this.Controls.Add(this.washRadioButton);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.estimateLabel);
-            this.Controls.Add(this.startButton);
-            this.Controls.Add(this.loadNameTextBox);
-            this.Controls.Add(this.machineNumberComboBox);
-            this.Controls.Add(this.setting1ComboBox);
-            this.Controls.Add(this.setting2ComboBox);
-            this.Name = "MachineInfo";
-            this.Text = "Machine Information";
+            this.ClientSize = new System.Drawing.Size(1516, 962);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Name = "ReportPage";
+            this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox setting2ComboBox;
-        private System.Windows.Forms.ComboBox setting1ComboBox;
-        private System.Windows.Forms.ComboBox machineNumberComboBox;
-        private System.Windows.Forms.TextBox loadNameTextBox;
-        private System.Windows.Forms.Button startButton;
-        private System.Windows.Forms.Label estimateLabel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton washRadioButton;
-        private System.Windows.Forms.RadioButton dryerRadioButton;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.RichTextBox describeIssue;
+        private System.Windows.Forms.ListBox locationListBox;
+        private System.Windows.Forms.ListBox machineListBox;
     }
 }
 
