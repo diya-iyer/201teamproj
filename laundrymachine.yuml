@@ -1,0 +1,15 @@
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+
+// Abstract Class
+[+A:Machine| |+loadname:string; +available:bool; +location:string; +loadInterval:int; +startTime:DateTime; | +SetStartTime();]
+
+// Classes
+[+WashLoad| |+washType:stringarray; washTypeTime:intarray; temperature:stringarray; +selectedWashType:string; +selectedTemperature:string]
+[+DryLoad||+dryType:stringarray; +dryTypeTime:intarray; selectedDryType:string;]
+
+// Relationships
+[+A:Machine]^-.-[+WashLoad]
+[+A:Machine]^-.-[+DryLoad]
+
