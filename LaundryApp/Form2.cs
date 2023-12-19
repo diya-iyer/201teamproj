@@ -21,7 +21,7 @@ using Newtonsoft.Json; //for json additions
 namespace LaundryApp
 {
     
-    
+   
     public partial class History : Form
     {
 
@@ -138,5 +138,5 @@ namespace LaundryApp
 
     }
 
-
+    
 }

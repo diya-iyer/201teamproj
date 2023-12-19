@@ -1,7 +1,7 @@
 [
 	{
 		"location": "Sol",
-		"machineName": "Washer1",
+		"machineName": "Sol Washer1",
 		"available": 1,
 		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
 		"washTypeTime": [50, 70, 90],
@@ -9,7 +9,7 @@
 	},
 	{
 		"location": "Sol",
-		"machineName": "Washer2",
+		"machineName": "Sol Washer2",
 		"available": 1,
 		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
 		"washTypeTime": [ 50, 70, 90 ],
@@ -17,10 +17,107 @@
 	},
 	{
 		"location": "Sol",
-		"machineName": "Washer3",
+		"machineName": "Sol Washer3",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Washer1",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Washer2",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Washer3",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Washer4",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Washer5",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Washer1",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Washer2",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Washer3",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Washer4",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Washer1",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Washer2",
+		"available": 1,
+		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
+		"washTypeTime": [ 50, 70, 90 ],
+		"temperature": [ "Cold", "Warm" ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Washer3",
 		"available": 1,
 		"washType": [ "Normal", "Delicate", "Heavy Duty" ],
 		"washTypeTime": [ 50, 70, 90 ],
 		"temperature": [ "Cold", "Warm" ]
 	}
+
 ]

@@ -101,8 +101,8 @@ namespace LaundryApp
 
         private void HistoryToolStripButton__Click(object sender, EventArgs e)
         {
-            Form2 historyForm = new Form2();
-            historyForm.ShowDialog();
+           // Form2 historyForm = new Form2();
+           // historyForm.ShowDialog();
         }
 
         private void ReportToolStripButton__Click(object sender, EventArgs e)

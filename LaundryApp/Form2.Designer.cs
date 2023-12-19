@@ -1,5 +1,6 @@
 ﻿namespace LaundryApp
 {
+    
     partial class History
     {
         /// <summary>
@@ -182,4 +183,6 @@
         private System.Windows.Forms.GroupBox historyGroupBox;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
+
+    
 }

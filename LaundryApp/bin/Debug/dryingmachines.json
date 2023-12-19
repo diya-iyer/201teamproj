@@ -1,23 +1,121 @@
 [
 	{
 		"location": "Sol",
-		"machineName": "Dryer1",
+		"machineName": "Sol Dryer1",
 		"available": 1,
 		"dryType": [ "Air Fluff", "Heat Dry" ],
 		"dryTypeTime": [ 20, 45]
 	},
 	{
 		"location": "Sol",
-		"machineName": "Dryer2",
+		"machineName": "Sol Dryer2",
 		"available": 1,
-		"dryType": ["Heat Dry" ],
-		"dryTypeTime": [45]
+		"dryType": ["Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [20, 45]
 	},
 	{
 		"location": "Sol",
-		"machineName": "Dryer3",
+		"machineName": "Sol Dryer3",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Sol",
+		"machineName": "Sol Dryer4",
 		"available": 0,
 		"dryType": [ "Air Fluff", "Heat Dry" ],
-		"dryTypeTime": [20, 45]
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Dryer1",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Dryer2",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Dryer3",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Dryer4",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Ellingson",
+		"machineName": "Ellingson Dryer5",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Dryer1",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Dryer2",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Dryer3",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Dryer4",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gleason",
+		"machineName": "Gleason Dryer5",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Dryer1",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Dryer2",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
+	},
+	{
+		"location": "Gibson",
+		"machineName": "Gibson Dryer3",
+		"available": 1,
+		"dryType": [ "Air Fluff", "Heat Dry" ],
+		"dryTypeTime": [ 20, 45 ]
 	}
 ]
