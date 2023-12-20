@@ -73,7 +73,7 @@ namespace LaundryApp
         private void ReportButton__Click(object sender, EventArgs e)
         {
             this.Hide();
-
+            // the report form never made it into this project, when it is added, it'll be linked here
         }
 
         // loads the details of all the available machines and their settings to be displayed in drop downs
