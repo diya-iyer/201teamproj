@@ -39,7 +39,6 @@ C:\Users\Christine\source\repos\201teamproj\LaundryApp\bin\Debug\Newtonsoft.Json
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.AssemblyReference.cache
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.AvailabilityForm.resources
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.MachineInfo.resources
-C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.Form2.resources
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.Home.resources
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.Properties.Resources.resources
 C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.csproj.GenerateResource.cache
@@ -64,3 +63,4 @@ C:\Users\diyai\github\LaundryApp\bin\Debug\LaundryMachines.pdb
 C:\Users\diyai\github\LaundryApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\diyai\github\LaundryApp\obj\Debug\LaundryApp.Form2.resources
 C:\Users\diyai\github\LaundryApp\obj\Debug\LaundryApp.csproj.CopyComplete
+C:\Users\Christine\source\repos\201teamproj\LaundryApp\obj\Debug\LaundryApp.History.resources

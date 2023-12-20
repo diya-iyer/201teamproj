@@ -24,8 +24,8 @@ namespace LaundryApp
         public List<DryLoad> dryers = new List<DryLoad>(); // list of all the dryers in the selected location 
         WashLoad selectedWasher = null; // the washing machine the user is registering 
         DryLoad selectedDryer = null; // the dryer the user is registering
-        List<WashLoad> selectedWasherList = new List<WashLoad>(); // a list of all the washing machines registered by the user
-        List<DryLoad> selectedDryerList = new List<DryLoad>(); // a list of all the dryers registered by the user
+        public List<WashLoad> selectedWasherList = new List<WashLoad>(); // a list of all the washing machines registered by the user
+        public List<DryLoad> selectedDryerList = new List<DryLoad>(); // a list of all the dryers registered by the user
         int currentLoadTime = 0; // the estimated time to complete the washing or drying of the load
 
         // constructor gets passed the location the user selected on the homepage
@@ -52,7 +52,7 @@ namespace LaundryApp
         private void HomeButton__Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home homeForm = new Home();
+            Home homeForm = new Home(selectedWasherList, selectedDryerList);
             homeForm.ShowDialog();
         }
 

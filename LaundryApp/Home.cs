@@ -15,14 +15,14 @@ namespace LaundryApp
 {
     public partial class Home : Form
     {
-        public Home()
+        // Author: Christine Espeleta
+        // Purpose: The Home page will display up to 4 current loads (2 for washing, 2 for drying). It also has an option to help the user register a new load by selecting a laundromat from the dropdown menu.
+
+        public Home(List<WashLoad> currentWashLoads, List<DryLoad> currentDryLoads)
         {
             InitializeComponent();
-            // grab info from machine info page
-            MachineInfo machineInfo = new MachineInfo(this.laundromatComboBox.SelectedItem.ToString());
 
             // nav bar buttons - navigate to other forms
-            this.homeToolStripButton.Click += new EventHandler(this.HomeToolStripButtonButton__Click);
             this.availabilityToolStripButton.Click += new EventHandler(this.AvailabilityToolStripButton__Click);
             this.historyToolStripButton.Click += new EventHandler(this.HistoryToolStripButton__Click);
             this.reportToolStripButton.Click += new EventHandler(this.ReportToolStripButton__Click);
@@ -41,56 +41,49 @@ namespace LaundryApp
             this.currentLoadsDryerGroupBox2.Visible = false;
 
             // if there are washer loads
-            if (machineInfo.washers.Count > 0)
+            if (currentWashLoads.Count > 0)
             {
                 // change groupbox visibility
                 this.currentLoadsWasherGroupBox1.Enabled = true;
                 this.currentLoadsWasherGroupBox1.Visible = true;
                 // add washer load info
-                this.groupBox1LaundromatLabel.Text = machineInfo.washers[0].location;
-                this.groupBox1MachineLabel.Text = machineInfo.washers[0].machineName;
-                this.groupBox1TimeLabel.Text = machineInfo.washers[0].loadInterval.ToString();
+                this.groupBox1LaundromatLabel.Text = currentWashLoads[0].location;
+                this.groupBox1MachineLabel.Text = currentWashLoads[0].machineName;
+                this.groupBox1TimeLabel.Text = "Finishing at " + DateTime.Now.AddMinutes(Convert.ToDouble(currentWashLoads[0].loadInterval)).ToString("H:mm");
 
-                if (machineInfo.washers.Count > 1)
+                if (currentWashLoads.Count > 1)
                 {
                     // change groupbox visibility
                     this.currentLoadsWasherGroupBox2.Enabled = true;
                     this.currentLoadsWasherGroupBox2.Visible = true;
                     // add washer load info
-                    this.groupBox2LaundromatLabel.Text = machineInfo.washers[1].location;
-                    this.groupBox2MachineLabel.Text = machineInfo.washers[1].machineName;
-                    this.groupBox2TimeLabel.Text = machineInfo.washers[1].loadInterval.ToString();
+                    this.groupBox2LaundromatLabel.Text = currentWashLoads[1].location;
+                    this.groupBox2MachineLabel.Text = currentWashLoads[1].machineName;
+                    this.groupBox2TimeLabel.Text = "Finishing at " + DateTime.Now.AddMinutes(Convert.ToDouble(currentWashLoads[1].loadInterval)).ToString("H:mm");
                 }
             }
 
             // if there are dryer loads
-            if (machineInfo.dryers.Count > 0)
+            if (currentDryLoads.Count > 0)
             {
                 // change groupbox visibility
                 this.currentLoadsDryerGroupBox1.Enabled = true;
                 this.currentLoadsDryerGroupBox1.Visible = true;
                 // add dryer load info
-                this.groupBox3LaundromatLabel.Text = machineInfo.dryers[0].location;
-                this.groupBox3MachineLabel.Text = machineInfo.dryers[0].machineName;
-                this.groupBox3TimeLabel.Text = machineInfo.dryers[0].loadInterval.ToString();
-                if (machineInfo.dryers.Count > 1)
+                this.groupBox3LaundromatLabel.Text = currentDryLoads[0].location;
+                this.groupBox3MachineLabel.Text = currentDryLoads[0].machineName;
+                this.groupBox3TimeLabel.Text = "Finishing at " + DateTime.Now.AddMinutes(Convert.ToDouble(currentDryLoads[0].loadInterval)).ToString("H:mm");
+                if (currentDryLoads.Count > 1)
                 {
                     // change groupbox visibility
                     this.currentLoadsDryerGroupBox2.Enabled = true;
                     this.currentLoadsDryerGroupBox2.Visible = true;
                     // add dryer load info
-                    this.groupBox4LaundromatLabel.Text = machineInfo.dryers[1].location;
-                    this.groupBox4MachineLabel.Text = machineInfo.dryers[1].machineName;
-                    this.groupBox4TimeLabel.Text = machineInfo.dryers[1].loadInterval.ToString();
+                    this.groupBox4LaundromatLabel.Text = currentDryLoads[1].location;
+                    this.groupBox4MachineLabel.Text = currentDryLoads[1].machineName;
+                    this.groupBox4TimeLabel.Text = "Finishing at " + DateTime.Now.AddMinutes(Convert.ToDouble(currentDryLoads[1].loadInterval)).ToString("H:mm");
                 }
             }
-        }
-
-        // tool strip button event handlers
-        private void HomeToolStripButtonButton__Click(object sender, EventArgs e)
-        {
-            Home homepageForm = new Home();
-            homepageForm.ShowDialog();
         }
 
         private void AvailabilityToolStripButton__Click(object sender, EventArgs e)
@@ -101,8 +94,8 @@ namespace LaundryApp
 
         private void HistoryToolStripButton__Click(object sender, EventArgs e)
         {
-           // Form2 historyForm = new Form2();
-           // historyForm.ShowDialog();
+           //history historyform = new history();
+           //historyform.showdialog();
         }
 
         private void ReportToolStripButton__Click(object sender, EventArgs e)

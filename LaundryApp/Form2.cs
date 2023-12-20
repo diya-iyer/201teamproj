@@ -43,13 +43,13 @@ namespace LaundryApp
 
             //attach event handlers
             searchButton.Click += SearchButton_Click;
-            viewReportButton.Click += ViewReportButton_Click;
+            //viewReportButton.Click += ViewReportButton_Click;
 
         }
 
         private void PopulateHistoryGrid()
         {
-            
+
             historyDataGridView.Rows.Clear();
 
             foreach (WashLoad washLoad in washHistory)
@@ -111,18 +111,18 @@ namespace LaundryApp
 
         private void UpdateHistoryGrid(List<object> filteredHistory)
         {
-            
-            historyDataGridView.Rows.Clear();
 
-            foreach (object entry in filteredHistory)
+            historydatagridview.rows.clear();
+
+            foreach (object entry in filteredhistory)
             {
-                if (entry is { Type: "Washer", Load: WashLoad washLoad })
+                if (entry is { type: "washer", load: washload washload })
                 {
-                    historyDataGridView.Rows.Add("Washer", washLoad.machineName, washLoad.selectedWashType, washLoad.selectedTemperature, washLoad.loadName, washLoad.loadInterval);
+                    historydatagridview.rows.add("washer", washload.machinename, washload.selectedwashtype, washload.selectedtemperature, washload.loadname, washload.loadinterval);
                 }
-                else if (entry is { Type: "Dryer", Load: DryLoad dryLoad })
+                else if (entry is { type: "dryer", load: dryload dryload })
                 {
-                    historyDataGridView.Rows.Add("Dryer", dryLoad.machineName, dryLoad.selectedDryType, string.Empty, dryLoad.loadName, dryLoad.loadInterval);
+                    historydatagridview.rows.add("dryer", dryload.machinename, dryload.selecteddrytype, string.empty, dryload.loadname, dryload.loadinterval);
                 }
             }
 
