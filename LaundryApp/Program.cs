@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaundryMachines;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace LaundryApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MachineInfo("Sol"));
+            Application.Run(new Home(new List<WashLoad>(), new List<DryLoad>()));
         }
     }
 }
