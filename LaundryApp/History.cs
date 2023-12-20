@@ -30,6 +30,13 @@ namespace LaundryApp
         private List<WashLoad> washHistory;
         private List<DryLoad> dryHistory;
 
+        //for home navigation - defined properties for selectedWasherList/DryerList
+        public List<WashLoad> SelectedWasherList { get; private set; } = new List<WashLoad>();
+        public List<DryLoad> SelectedDryerList { get; private set; } = new List<DryLoad>();
+
+        //for home navigation - defined event to notify when navigation to Home requested
+        public event EventHandler NavigationToHomeRequested;
+
         //lists as parameter
         public History(List<WashLoad> washHistory, List<DryLoad> dryHistory)
         {
@@ -42,9 +49,45 @@ namespace LaundryApp
             //populate DataGridView w/ laundry history
             PopulateHistoryGrid();
 
-            //attach event handlers
-            searchButton.Click += SearchButton_Click;
 
+            //attach event handlers
+            searchButton.Click += new EventHandler(SearchButton_Click);
+            this.homeToolStripButton.Click += new EventHandler(HomeToolStripButton_Click);
+            this.availToolStripButton.Click += new EventHandler(AvailToolStripButton_Click);
+            this.reportToolStripButton.Click += new EventHandler(ReportToolStripButton_Click);
+
+        }
+
+        //home navigation
+        private void HomeToolStripButton_Click(object sender, EventArgs e)
+        {
+            /*this.Hide();
+            Home homeForm = new Home(selectedWasherList, selectedDryerList);
+            homeForm.ShowDialog();*/
+
+            //set properties w/ current selected lists
+            SelectedWasherList = washHistory;
+            SelectedDryerList = dryHistory;
+
+            //notify navigation to Home request (whatever this means)
+            NavigationToHomeRequested?.Invoke(this, EventArgs.Empty);
+            this.Hide();
+        }
+
+        //availability navigation
+        private void AvailToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AvailabilityForm availForm = new AvailabilityForm();
+            availForm.ShowDialog();
+        }
+
+        //report navigation
+        private void ReportToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            //ReportPage reportForm = new LaundryApp.ReportForm();
+            //reportForm.ShowDialog;
         }
 
         private void PopulateHistoryGrid()
@@ -109,28 +152,36 @@ namespace LaundryApp
 
         }
 
+        //this thing sucks
         private void UpdateHistoryGrid(List<object> filteredHistory)
         {
-            
+
             historyDataGridView.Rows.Clear();
 
-            foreach (object entry in filteredHistory)
+            try
             {
-                if (entry is WashLoad washLoad && ((string)entry.GetType().GetProperty("Type").GetValue(entry)) == "washer")
+                foreach (object entry in filteredHistory)
                 {
-                    historyDataGridView.Rows.Add("Washer", washLoad.machineName, washLoad.selectedWashType, washLoad.selectedTemperature, washLoad.loadName, washLoad.loadInterval);
+                    string type = (string)entry.GetType().GetProperty("Type").GetValue(entry);
+
+                    if (entry is WashLoad washLoad && type == "Washer")
+                    {
+                        historyDataGridView.Rows.Add("Washer", washLoad.machineName, washLoad.selectedWashType, washLoad.selectedTemperature, washLoad.loadName, washLoad.loadInterval);
+                    }
+                    else if (entry is DryLoad dryLoad && type == "Dryer")
+                    {
+                        historyDataGridView.Rows.Add("Dryer", dryLoad.machineName, dryLoad.selectedDryType, string.Empty, dryLoad.loadName, dryLoad.loadInterval);
+                    }
                 }
-                else if (entry is DryLoad dryLoad && ((string)entry.GetType().GetProperty("Type").GetValue(entry)) == "dryer")
-                {
-                    historyDataGridView.Rows.Add("Dryer", dryLoad.machineName, dryLoad.selectedDryType, string.Empty, dryLoad.loadName, dryLoad.loadInterval);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
 
-        //i'm thinking that reports should instead accept a list from history to be used, as navigating to reports from this page seems redundant
-
     }
 
-    
+
 }

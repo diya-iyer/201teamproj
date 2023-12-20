@@ -141,7 +141,7 @@
             this.historyGroupBox.ForeColor = System.Drawing.Color.White;
             this.historyGroupBox.Location = new System.Drawing.Point(12, 116);
             this.historyGroupBox.Name = "historyGroupBox";
-            this.historyGroupBox.Size = new System.Drawing.Size(776, 322);
+            this.historyGroupBox.Size = new System.Drawing.Size(691, 275);
             this.historyGroupBox.TabIndex = 2;
             this.historyGroupBox.TabStop = false;
             this.historyGroupBox.Text = "History";
