@@ -36,14 +36,14 @@
             this.historyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.reportToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.searchPanel = new System.Windows.Forms.Panel();
-            this.searchButton = new System.Windows.Forms.Button();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             this.historyGroupBox = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.historyDataGridView = new System.Windows.Forms.DataGridView();
             this.navToolStrip.SuspendLayout();
             this.searchPanel.SuspendLayout();
             this.historyGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // navToolStrip
@@ -112,6 +112,13 @@
             this.searchPanel.Size = new System.Drawing.Size(366, 59);
             this.searchPanel.TabIndex = 1;
             // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(19, 21);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(242, 20);
+            this.searchTextBox.TabIndex = 1;
+            // 
             // searchButton
             // 
             this.searchButton.Location = new System.Drawing.Point(267, 19);
@@ -121,17 +128,10 @@
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
             // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Location = new System.Drawing.Point(19, 21);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(242, 20);
-            this.searchTextBox.TabIndex = 1;
-            // 
             // historyGroupBox
             // 
             this.historyGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.historyGroupBox.Controls.Add(this.dataGridView1);
+            this.historyGroupBox.Controls.Add(this.historyDataGridView);
             this.historyGroupBox.ForeColor = System.Drawing.Color.White;
             this.historyGroupBox.Location = new System.Drawing.Point(12, 116);
             this.historyGroupBox.Name = "historyGroupBox";
@@ -140,13 +140,13 @@
             this.historyGroupBox.TabStop = false;
             this.historyGroupBox.Text = "History";
             // 
-            // dataGridView1
+            // historyDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.historyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historyDataGridView.Location = new System.Drawing.Point(19, 19);
+            this.historyDataGridView.Name = "historyDataGridView";
+            this.historyDataGridView.Size = new System.Drawing.Size(240, 150);
+            this.historyDataGridView.TabIndex = 0;
             // 
             // History
             // 
@@ -164,7 +164,7 @@
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
             this.historyGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,7 +181,7 @@
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.GroupBox historyGroupBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView historyDataGridView;
     }
 
     

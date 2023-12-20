@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LaundryMachines;
 using Newtonsoft.Json; //for json additions
+using System.IO;
 
 
 
@@ -109,32 +110,45 @@ namespace LaundryApp
 
         }
 
+        /*
         private void UpdateHistoryGrid(List<object> filteredHistory)
         {
 
-            historydatagridview.rows.clear();
+            historyDataGridView.Rows.Clear();
 
-            foreach (object entry in filteredhistory)
+            foreach (object entry in filteredHistory)
             {
-                if (entry is { type: "washer", load: washload washload })
+                if (entry is { type: "washer", load: WashLoad washLoad })
                 {
-                    historydatagridview.rows.add("washer", washload.machinename, washload.selectedwashtype, washload.selectedtemperature, washload.loadname, washload.loadinterval);
+                    historyDataGridView.Rows.Add("washer", washLoad.machineName, washLoad.selectedWashType, washLoad.selectedTemperature, washLoad.loadName, washLoad.loadInterval);
                 }
-                else if (entry is { type: "dryer", load: dryload dryload })
+                else if (entry is { type: "dryer", load: DryLoad dryLoad })
                 {
-                    historydatagridview.rows.add("dryer", dryload.machinename, dryload.selecteddrytype, string.empty, dryload.loadname, dryload.loadinterval);
+                    historyDataGridView.Rows.Add("dryer", dryLoad.machineName, dryLoad.selectedDryType, string.Empty, dryLoad.loadName, dryLoad.loadInterval);
                 }
             }
 
         }
+        */
 
-        //i'm thinking that instead reports should accept a list from the history log that should be used, as navigating to reports from this page seems redundant
-        private void ViewReportButton_Click(object sender, EventArgs e)
+        private void UpdateHistoryGrid(List<object> filteredHistory)
         {
-            //navigate to report page
-            Report reportForm = new Report(washHistory, dryHistory);
-            reportForm.Show();
+            historyDataGridView.Rows.Clear();
+
+            foreach (object entry in filteredHistory)
+            {
+                if (entry is WashLoad washLoad && ((string)entry.GetType().GetProperty("Type").GetValue(entry)) == "washer")
+                {
+                    historyDataGridView.Rows.Add("washer", washLoad.machineName, washLoad.selectedWashType, washLoad.selectedTemperature, washLoad.loadName, washLoad.loadInterval);
+                }
+                else if (entry is DryLoad dryLoad && ((string)entry.GetType().GetProperty("Type").GetValue(entry)) == "dryer")
+                {
+                    historyDataGridView.Rows.Add("dryer", dryLoad.machineName, dryLoad.selectedDryType, string.Empty, dryLoad.loadName, dryLoad.loadInterval);
+                }
+            }
         }
+
+        //i'm thinking that reports should instead accept a list from history to be used, as navigating to reports from this page seems redundant
 
     }
 
