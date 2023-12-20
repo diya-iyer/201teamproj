@@ -33,7 +33,7 @@
             this.homeButton = new System.Windows.Forms.Button();
             this.AvailabilityButton = new System.Windows.Forms.Button();
             this.historyButton = new System.Windows.Forms.Button();
-            this.ReportButton = new System.Windows.Forms.Button();
+            this.reportButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.brokenGroupBox = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.hallDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
             this.carltonGibsonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eugeneColbyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.francesBakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -142,19 +142,19 @@
             this.historyButton.Text = "History";
             this.historyButton.UseVisualStyleBackColor = false;
             // 
-            // ReportButton
+            // reportButton
             // 
-            this.ReportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.ReportButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
-            this.ReportButton.FlatAppearance.BorderSize = 0;
-            this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReportButton.ForeColor = System.Drawing.Color.White;
-            this.ReportButton.Location = new System.Drawing.Point(256, 1);
-            this.ReportButton.Name = "ReportButton";
-            this.ReportButton.Size = new System.Drawing.Size(75, 23);
-            this.ReportButton.TabIndex = 4;
-            this.ReportButton.Text = "Report";
-            this.ReportButton.UseVisualStyleBackColor = false;
+            this.reportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
+            this.reportButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
+            this.reportButton.FlatAppearance.BorderSize = 0;
+            this.reportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reportButton.ForeColor = System.Drawing.Color.White;
+            this.reportButton.Location = new System.Drawing.Point(256, 1);
+            this.reportButton.Name = "reportButton";
+            this.reportButton.Size = new System.Drawing.Size(75, 23);
+            this.reportButton.TabIndex = 4;
+            this.reportButton.Text = "Report";
+            this.reportButton.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -378,16 +378,16 @@
             // 
             this.toolStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(104)))), ((int)(((byte)(62)))));
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel2});
+            this.hallDropDownButton});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(423, 25);
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // toolStripLabel2
+            // hallDropDownButton
             // 
-            this.toolStripLabel2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hallDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.carltonGibsonToolStripMenuItem,
             this.eugeneColbyToolStripMenuItem,
             this.francesBakerToolStripMenuItem,
@@ -401,10 +401,10 @@
             this.resHallCToolStripMenuItem,
             this.resHallDToolStripMenuItem,
             this.solHeumannToolStripMenuItem});
-            this.toolStripLabel2.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(84, 22);
-            this.toolStripLabel2.Text = "Select a Hall";
+            this.hallDropDownButton.ForeColor = System.Drawing.Color.White;
+            this.hallDropDownButton.Name = "hallDropDownButton";
+            this.hallDropDownButton.Size = new System.Drawing.Size(84, 22);
+            this.hallDropDownButton.Text = "Select a Hall";
             // 
             // carltonGibsonToolStripMenuItem
             // 
@@ -493,7 +493,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.ReportButton);
+            this.Controls.Add(this.reportButton);
             this.Controls.Add(this.historyButton);
             this.Controls.Add(this.AvailabilityButton);
             this.Controls.Add(this.homeButton);
@@ -531,14 +531,14 @@
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Button AvailabilityButton;
         private System.Windows.Forms.Button historyButton;
-        private System.Windows.Forms.Button ReportButton;
+        private System.Windows.Forms.Button reportButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label availabilityLabel;
         private System.Windows.Forms.PictureBox mapPictureBox;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripLabel2;
+        private System.Windows.Forms.ToolStripDropDownButton hallDropDownButton;
         private System.Windows.Forms.ToolStripMenuItem carltonGibsonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eugeneColbyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem francesBakerToolStripMenuItem;
