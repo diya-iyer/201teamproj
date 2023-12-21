@@ -14,7 +14,7 @@ using System.IO;
 namespace LaundryApp
 {
     // Author: Neme Velazquez
-    // Purpose: Provide a quick view into the
+    // Purpose: Provide a quick view into the state of laundry facilities around campus
     public partial class AvailabilityForm : Form
     {
         // fields/variables needed for other form's constructors
@@ -55,11 +55,67 @@ namespace LaundryApp
             // Bright has not added this at the time of posting but will be updated if that changes
         }
 
-        private void HallDropDownButton__ItemClicked(object sender, EventArgs e)
+        //changes map image location, dropdown text and label text based on the json
+        private void HallDropDownButton__ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            //
+            ToolStripItem item = e.ClickedItem;
+            this.hallDropDownButton.Text = item.Text;
+            switch (item.Text)
+            {
+                case "Eugene Colby":
+                case "Frances Baker":
+                case "Fredericka Douglass":
+                case "Helen Fish":
+                case "Peter Peterson":
+                case "Res Hall A":
+                case "Res Hall B":
+                case "Res Hall C":
+                case "Res Hall D":
+                    this.mapPictureBox.ImageLocation = "https://people.rit.edu/nav7977/unknown-map.png";
+                    this.label1.Text = "?";
+                    this.label2.Text = "?";
+                    this.label5.Text = "?";
+                    this.label6.Text = "?";
+                    this.label7.Text = "?";
+                    this.label8.Text = "?";
+                    break;
+                case "Carlton Gibson":
+                    this.mapPictureBox.ImageLocation = "https://people.rit.edu/nav7977/gibsHall.png";
+                    this.label1.Text = "1";
+                    this.label2.Text = "2";
+                    this.label5.Text = "2";
+                    this.label6.Text = "1";
+                    this.label7.Text = "0";
+                    this.label8.Text = "0";
+                    break;
+                case "Kate Gleason":
+                    this.mapPictureBox.ImageLocation = "https://people.rit.edu/nav7977/gleasHall.png";
+                    this.label1.Text = "3";
+                    this.label2.Text = "3";
+                    this.label5.Text = "1";
+                    this.label6.Text = "2";
+                    this.label7.Text = "0";
+                    this.label8.Text = "0";
+                    break;
+                case "Mark Ellingson":
+                    this.mapPictureBox.ImageLocation = "https://people.rit.edu/nav7977/ellHall.png";
+                    this.label1.Text = "3";
+                    this.label2.Text = "3";
+                    this.label5.Text = "2";
+                    this.label6.Text = "2";
+                    this.label7.Text = "0";
+                    this.label8.Text = "0";
+                    break;
+                case "Sol Heumann":
+                    this.mapPictureBox.ImageLocation = "https://people.rit.edu/nav7977/solHall.png";
+                    this.label1.Text = "1";
+                    this.label2.Text = "3";
+                    this.label5.Text = "2";
+                    this.label6.Text = "0";
+                    this.label7.Text = "0";
+                    this.label8.Text = "1";
+                    break;
+            }
         }
     }
-
-    
 }

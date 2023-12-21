@@ -6,18 +6,9 @@
 // {generate:true}
 // {direction:topDown}
 
-// interface - stores states machines for interactive map
-[I:IMachine|+machineType:string;+name:string;+DisplayStatus()]
-
 // class (tentatively) - display total washers based on their state, entered by users in the app
-[+WorkingMachines|+machineType:string;+name:string|+washersInUse:int;+dryersInUse:int;+DisplayStatus()|]
-[+OpenMachines|+machineType:string;+name:string|+availableWashers:int;+availableDryers:int;+DisplayStatus()|]
-[+BrokenMachines|+machineType:string;+name:string|+brokenWashers:int;+brokenDryers:int;+DisplayStatus()|]
+[+AvailabilityForm|+selectedWasherList:List;+selectedDryerList:List;|-HomeButton__Click;-HistoryButton__Click;-HistoryButton__Click;-HallDropDownButton__ItemClicked|()]
 
-[+Map|+size:int;+location:string|+DisplayMachines();|();(machine:Machine)]
-[+Legend|+size:int|+DisplayLegend()|]
 
 //inheritance
-[I:IMachine] ^ [+WorkingMachines]
-[I:IMachine] ^ [+OpenMachines]
-[I:IMachine] ^ [+BrokenMachines]
+[Form] <-.- [+AvailabilityForm]
